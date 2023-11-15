@@ -1,0 +1,12 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+    "primary": rgba(130, 201, 30),
+    "primary-theme": rgba(203, 120, 22),
+    
+);
+
+$theme-colors: map-merge($theme-colors , $custom-colors );
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
