@@ -4,20 +4,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap w/ Vite</title>
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./scss/styles.scss">
   </head>
-  <body class="bg-primary">
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary-theme">Primary button</button>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary bg-gradient">Go somewhere</a>
+  <body class="gradient vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="/">Auction House</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Auction House</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-primary">
+                  <ul class="navbar-nav justify-content-end lg-align-items-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/listings.html">Listings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/listings.html">Profile</a>
+                      </li>
+                  </ul>
+                    <button class="btn btn-light" type="submit">Sign In</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section id="hero-section" class="h-30 d-flex align-items-end justify-content-center">
+                <h1 id="hero-title" class="display-3">Welcome to Auction House</h1>
+            </section>
+            <section id="search-section" class="h-60 d-flex align-items-center justify-content-center background-img">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search Listings" aria-label="Search Listings" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+                </div>
+            </section>
         </div>
-      </div>
-    </div>
+    </main>
   </body>
 </html>

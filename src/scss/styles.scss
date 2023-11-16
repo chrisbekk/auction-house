@@ -1,12 +1,38 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
+
+
+
 $custom-colors: (
-    "primary": rgba(130, 201, 30),
-    "primary-theme": rgba(203, 120, 22),
+    "primary": #F98237,
+    
+    
     
 );
 
 $theme-colors: map-merge($theme-colors , $custom-colors );
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+.gradient {
+    background: var(--grad, linear-gradient(180deg, #00FF87 0%, #60EFFF 100%));
+}
+
+.h-30{
+    height: min(30vh, 350px);
+}
+
+.h-60{
+    height: min(40vh, 400px);
+}
+
+.background-img{
+    background-image: url("../../public/hero-bg.webp");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.title-animated-end{
+    font-size: larger;
+}
