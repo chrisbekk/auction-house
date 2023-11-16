@@ -7,7 +7,7 @@
     <script type="module" src="./js/main.js" defer></script>
     <link rel="stylesheet" href="./scss/styles.scss">
   </head>
-  <body class="gradient vh-100">
+  <body class="gradient min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg bg-primary fixed-top">
             <div class="container-fluid">
@@ -39,17 +39,44 @@
           </nav>
     </header>
     <main>
-        <div class="container">
+        <div class="container mb-5">
             <section id="hero-section" class="h-30 d-flex align-items-end justify-content-center">
                 <h1 id="hero-title" class="display-3">Welcome to Auction House</h1>
             </section>
-            <section id="search-section" class="h-60 d-flex align-items-center justify-content-center background-img">
+            <section id="search-section" class="h-60 d-flex align-items-center justify-content-center background-img mb-5">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Search Listings" aria-label="Search Listings" aria-describedby="button-addon2">
                     <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
                 </div>
             </section>
+            <section class="mx-5">
+                <div class="row">
+                    <h2 class="display-6 text-center">Step into the Auction House</h2>
+                </div>
+                <div class="row">
+                    <div class="col my-auto">
+                        <p>The Auction House connects you to thousands of verified users, making it easier for you to get the perfect bid</p>
+                    </div>
+                    <div class="col">
+                        <img src="./public/img1.webp" class="img-fluid" alt="Two people doing business">
+                    </div>
+                    <div class="col my-auto">The Auction House connects you to thousands of verified users, making it easier for you to get the perfect bid</div>
+                </div>
+                <div class="row">
+                    <div class="col-3 mx-auto">
+                        <p class="text-center">The Auction House connects you to thousands of verified users, making it easier for you to get the perfect bid</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2 d-flex justify-content-center">
+                        <button class="btn btn-primary btn-lg" type="button" id="button-addon2">Sign Up</button>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
   </body>
 </html>
