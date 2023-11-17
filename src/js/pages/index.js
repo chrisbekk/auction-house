@@ -1,9 +1,10 @@
 import { animateTitle } from "../animations/title.js";
-import { isAuth } from "../auth/isAuth";
 
+import { checkState } from "../state/user.js";
+import { search } from "../listeners/search.js";
 export function main() {
   animateTitle();
-  isAuth("token");
+  checkState("#user-sign-button");
 }
 
 main();
