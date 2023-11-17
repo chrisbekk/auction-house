@@ -1,7 +1,6 @@
 // Import our custom CSS
-import '../scss/styles.scss'
-import { animateTitle } from './animations/title'
-// Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
+import "../scss/styles.scss";
+import { main } from "./pages/index.js";
 
-animateTitle()
+// Import all of Bootstrap's JS
+import * as bootstrap from "bootstrap";

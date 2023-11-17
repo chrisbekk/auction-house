@@ -1,98 +1,164 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Auction House</title>
     <script type="module" src="./js/main.js" defer></script>
-    <link rel="stylesheet" href="./scss/styles.scss">
+    <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
   <body class="gradient min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary fixed-top ">
-            <div class="container-lg">
-              <a class="navbar-brand text-white" href="/">Auction House</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Auction House</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body bg-primary">
-                  <ul class="navbar-nav justify-content-end lg-align-items-center flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/listings.html">Listings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/listings.html">Profile</a>
-                      </li>
-                  </ul>
-                    <button class="btn btn-light" type="submit">Sign In</button>
-                </div>
-              </div>
+      <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+        <div class="container-lg">
+          <a class="navbar-brand text-white" href="/">Auction House</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bg-primary"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Auction House
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-          </nav>
+            <div class="offcanvas-body bg-primary">
+              <ul
+                class="navbar-nav justify-content-end lg-align-items-center flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/listings.html">Listings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/listings.html">Profile</a>
+                </li>
+              </ul>
+              <button class="btn btn-light" type="submit">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="container mb-5">
-            <section id="hero-section" class="h-30 d-flex align-items-end justify-content-center">
-                <h1 id="hero-title" class="display-3 text-center">Welcome to Auction House</h1>
-            </section>
-            <section id="search-section" class="h-60 d-flex align-items-center justify-content-center background-img mb-5">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search Listings" aria-label="Search Listings" aria-describedby="button-addon2">
-                    <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
-                </div>
-            </section>
-            <section class="mx-5">
-                <div class="row">
-                    <h2 class="display-6 text-center">Step into the Auction House</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-fluid order-2 order-lg-1 col-lg-4 my-auto">
-                        <p>The Auction House connects you to thousands of verified users, making it easier for you to get the perfect bid</p>
-                    </div>
-                    <div class="col-sm-fluid order-1 order-lg-2 col-lg-4 d-flex justify-content-center">
-                        <img src="./public/img1.webp" class="img-fluid" alt="Two people doing business">
-                    </div>
-                    <div class="col-sm-fluid order-3 order-lg-3 col-lg-4 my-auto">
-                        <p>The Auction House connects you to thousands of verified users, making it easier for you to get the perfect bid</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-lg-6 d-flex mx-auto">
-                        <p class="text-lg-center">The Auction House connects you to thousands of verified users, making it easier for you to get the perfect bid</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-6 col-md-3 d-flex justify-content-center">
-                        <button class="btn btn-primary btn-lg" type="button" id="button-addon2">Sign Up</button>
-                    </div>
-                </div>
-            </section>
-        </div>
+      <div class="container mb-5">
+        <section
+          id="hero-section"
+          class="h-30 d-flex align-items-end justify-content-center"
+        >
+          <h1 id="hero-title" class="display-3 text-center">
+            Welcome to Auction House
+          </h1>
+        </section>
+        <section
+          id="search-section"
+          class="h-60 d-flex align-items-center justify-content-center background-img mb-5"
+        >
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search Listings"
+              aria-label="Search Listings"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-primary" type="button" id="button-addon2">
+              Search
+            </button>
+          </div>
+        </section>
+        <section class="mx-5">
+          <div class="row">
+            <h2 class="display-6 text-center">Step into the Auction House</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-fluid order-2 order-lg-1 col-lg-4 my-auto">
+              <p>
+                The Auction House connects you to thousands of verified users,
+                making it easier for you to get the perfect bid
+              </p>
+            </div>
+            <div
+              class="col-sm-fluid order-1 order-lg-2 col-lg-4 d-flex justify-content-center"
+            >
+              <img
+                src="./public/img1.webp"
+                class="img-fluid"
+                alt="Two people doing business"
+              />
+            </div>
+            <div class="col-sm-fluid order-3 order-lg-3 col-lg-4 my-auto">
+              <p>
+                The Auction House connects you to thousands of verified users,
+                making it easier for you to get the perfect bid
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 d-flex mx-auto">
+              <p class="text-lg-center">
+                The Auction House connects you to thousands of verified users,
+                making it easier for you to get the perfect bid
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-3 d-flex justify-content-center">
+              <button
+                class="btn btn-primary btn-lg"
+                type="button"
+                id="button-addon2"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    <div class="container-lg">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary">2023 Company, Inc</p>
-            <p>Auction House</p>
-            <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item">
-                    <a href="/" class="nav-link px-2 text-body-secondary">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/listings.html" class="nav-link px-2 text-body-secondary">Listings</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/profile.html" class="nav-link px-2 text-body-secondary">Profile</a>
-                </li>
-            </ul>
-        </footer>
+    <div class="bg-primary">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-primary container-lg"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">2023 Company, Inc</p>
+        <p>Auction House</p>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="/" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/listings.html" class="nav-link px-2 text-body-secondary"
+              >Listings</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="/profile.html" class="nav-link px-2 text-body-secondary"
+              >Profile</a
+            >
+          </li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
