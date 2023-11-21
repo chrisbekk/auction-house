@@ -1,6 +1,10 @@
+import dotenv from "dotenv";
+import { defineConfig } from "vite";
+
+dotenv.config();
 const path = require("path");
 
-export default {
+export default defineConfig({
   root: path.resolve(__dirname, "src"),
   build: {
     outDir: "../dist",
@@ -9,4 +13,4 @@ export default {
   server: {
     port: 8080,
   },
-};
+});

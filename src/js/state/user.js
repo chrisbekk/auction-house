@@ -11,3 +11,5 @@ export function checkState(selector) {
     element.addEventListener("click", signIn);
   }
 }
+
+checkState("#user-sign-button");

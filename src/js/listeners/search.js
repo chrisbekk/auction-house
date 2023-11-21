@@ -8,4 +8,6 @@ export function search(event) {
   }
 }
 
-window.addEventListener("click", (event) => search(event));
+document
+  .querySelector("#button-addon2")
+  .addEventListener("click", (event) => search(event));

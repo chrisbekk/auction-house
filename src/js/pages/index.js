@@ -1,10 +1,8 @@
 import { animateTitle } from "../animations/title.js";
-
-import { checkState } from "../state/user.js";
+import { signUp } from "../listeners/signUp.js";
 import { search } from "../listeners/search.js";
-export function main() {
-  animateTitle();
-  checkState("#user-sign-button");
-}
+import { formValidation } from "../validation/formValidation.js";
+import { signUpModal, closeOutside } from "../listeners/signUpModal.js";
+export function index() {}
 
-main();
+index();
