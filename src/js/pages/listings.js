@@ -1,5 +1,6 @@
 import { getListings } from "../api/getListings.js";
 import { productCard } from "../components/productCard.js";
+import { searchListings } from "../listeners/searchListings.js";
 import { filterListings } from "../utils/filterListings.js";
 import { getParam } from "../utils/getParam.js";
 export function listings() {
@@ -19,6 +20,27 @@ export function listings() {
       listingsArray.forEach((listing) => {
         document.getElementById("listings-container").innerHTML +=
           productCard(listing);
+      });
+      document
+        .getElementById("search-listings")
+        .addEventListener("click", () => {
+          const searchString = searchListings();
+          const filteredArray = filterListings(listingsArray, searchString);
+          console.log(filteredArray);
+          document.getElementById("listings-container").innerHTML = "";
+          filteredArray.forEach((listing) => {
+            document.getElementById("listings-container").innerHTML +=
+              productCard(listing);
+          });
+        });
+      document.getElementById("search").addEventListener("input", (e) => {
+        if (e.target.value.trim() === "") {
+          document.getElementById("listings-container").innerHTML = "";
+          listingsArray.forEach((listing) => {
+            document.getElementById("listings-container").innerHTML +=
+              productCard(listing);
+          });
+        }
       });
     }
   });
