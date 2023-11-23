@@ -30,3 +30,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .title-animated-end {
   font-size: larger;
 }
+
+.card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+}
+
+.height {
+  height: 100%;
+}

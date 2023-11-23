@@ -1,6 +1,5 @@
 import { formErrorMessage } from "../errors/formErrorMessage.js";
 import { checkValues } from "../utils/checkValues.js";
-import { emailValidation } from "./emailValidation.js";
 import { inputValidation } from "./inputValidation.js";
 
 export function formValidation() {

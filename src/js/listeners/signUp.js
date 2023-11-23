@@ -1,12 +1,12 @@
+import { register } from "../api/register.js";
 import { formValidation } from "../validation/formValidation.js";
-const apiUrl = import.meta.env.VITE_BASE_URL;
-export function signUp(event) {
+
+export async function signUp(event) {
   event.preventDefault();
-  console.log("clicked");
-  console.log("Form Valid");
   const inputObject = formValidation();
-  console.log(inputObject);
-  console.log(apiUrl);
+  register(inputObject)
+    .then((data) => console.log("Data", data))
+    .catch((error) => alert(error));
 }
 
 document.querySelector("#sign-up-button").addEventListener("click", signUp);
