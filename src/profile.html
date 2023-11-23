@@ -74,13 +74,70 @@
       </style>
     </header>
     <main>
-      <div class="container mt-5">
-        <section>
-          <img
-            src="/placeholder.jpg"
-            class="img-fluid rounded-circle fixed-size"
-          />
+        <section class="">
+            <div class="container h-30 mt-5 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between justify-content-lg-around">
+                <div class="d-flex flex-column">
+                    <img
+                    src="/placeholder.jpg"
+                    class="img-fluid rounded-circle fixed-size mb-4"
+                  />
+                  <button>Change Avatar</button>
+                </div>
+
+                <p>USERNAME</p>
         </section>
+        <section>
+            
+                <div class="container mt-5">
+                    <div class="card text-center bg-primary">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs" id="cardTabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active bg-primary" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link bg-primary" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" href="#profile">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link bg-primary" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" href="#contact">Contact</a>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+
+                
+                    <div class="tab-content bg-primary">
+                      <div class="tab-pane show active" id="home">
+                        <div class="card bg-primary">
+                          <div class="card-body">
+                            <h5 class="card-title">Home Card</h5>
+                            <p class="card-text">Content for the home card.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="profile">
+                        <div class="card bg-primary">
+                          <div class="card-body">
+                            <h5 class="card-title">Profile Card</h5>
+                            <p class="card-text">Content for the profile card.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="contact">
+                        <div class="card bg-primary">
+                          <div class="card-body">
+                            <h5 class="card-title">Contact Card</h5>
+                            <p class="card-text">Content for the contact card.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                
+
+        </section>
+
       </div>
     </main>
     <div class="bg-primary mt-auto">
