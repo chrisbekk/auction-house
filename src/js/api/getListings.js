@@ -1,4 +1,5 @@
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+//const BASE_URL = import.meta.env.VITE_BASE_URL;
+const BASE_URL = "https://api.noroff.dev/api/v1/auction";
 export async function getListings() {
   try {
     const response = await fetch(`${BASE_URL}/listings`);
