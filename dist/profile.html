@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./scss/styles.scss" />
+    <title>Document</title>
+  </head>
+  <body class="gradient d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+        <div class="container-lg">
+          <a class="navbar-brand text-white" href="/">Auction House</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bg-primary"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Auction House
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body bg-primary">
+              <ul
+                class="navbar-nav justify-content-end lg-align-items-center flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/listings.html">Listings</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="/listings.html"
+                    id="profile-href"
+                    >Profile</a
+                  >
+                </li>
+              </ul>
+              <button class="btn btn-light" type="submit" id="user-sign-button">
+                Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <style>
+        /* Custom CSS for fixed height and width */
+        .fixed-size {
+          width: 150px; /* Set your desired width */
+          height: 150px; /* Set your desired height */
+        }
+      </style>
+    </header>
+    <main>
+        <section class="">
+            <div class="container h-30 mt-5 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between justify-content-lg-around">
+                <div class="d-flex flex-column">
+                    <img
+                    src="/placeholder.jpg"
+                    class="img-fluid rounded-circle fixed-size mb-4"
+                  />
+                  <button>Change Avatar</button>
+                </div>
+
+                <p>USERNAME</p>
+        </section>
+        <section>
+            
+                <div class="container mt-5">
+                    <div class="card text-center bg-primary">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs" id="cardTabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active bg-primary" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link bg-primary" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" href="#profile">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link bg-primary" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" href="#contact">Contact</a>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+
+                
+                    <div class="tab-content bg-primary">
+                      <div class="tab-pane show active" id="home">
+                        <div class="card bg-primary">
+                          <div class="card-body">
+                            <h5 class="card-title">Home Card</h5>
+                            <p class="card-text">Content for the home card.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="profile">
+                        <div class="card bg-primary">
+                          <div class="card-body">
+                            <h5 class="card-title">Profile Card</h5>
+                            <p class="card-text">Content for the profile card.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="contact">
+                        <div class="card bg-primary">
+                          <div class="card-body">
+                            <h5 class="card-title">Contact Card</h5>
+                            <p class="card-text">Content for the contact card.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                
+
+        </section>
+
+      </div>
+    </main>
+    <div class="bg-primary mt-auto">
+      <footer class="">FOOTER</footer>
+    </div>
+  </body>
+</html>
