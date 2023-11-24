@@ -5,6 +5,6 @@ export function search(event) {
   if (input.value.trim() === "") {
     return;
   } else {
-    window.location.href = `/listings.html?search=${input.value}`;
+    window.location.href = `listings.html?search=${input.value}`;
   }
 }
