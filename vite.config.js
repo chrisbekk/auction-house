@@ -1,16 +1,19 @@
-import dotenv from "dotenv";
-import { defineConfig } from "vite";
+import { resolve } from "path";
 
-dotenv.config();
-const path = require("path");
-
-export default defineConfig({
-  root: path.resolve(__dirname, "src"),
+const root = resolve(__dirname, "src");
+const outDir = resolve(__dirname, "dist");
+export default {
+  // config options
+  root,
   build: {
-    outDir: "../dist",
+    outDir,
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: resolve(root, "index.html"),
+        listings: resolve(root, "listings", "listings.html"),
+        contact: resolve(root, "profile", "profile.html"),
+      },
+    },
   },
-  publicDir: "public",
-  server: {
-    port: 8080,
-  },
-});
+};

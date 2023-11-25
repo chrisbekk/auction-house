@@ -22,7 +22,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 .background-img {
-  background-image: url("./hero-bg.webp");
+  background-image: url("/hero-bg.webp");
   background-repeat: no-repeat;
   background-position: center bottom;
 }

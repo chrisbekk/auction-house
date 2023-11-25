@@ -1,8 +1,12 @@
-import { getListings } from "../api/getListings.js";
-import { productCard } from "../components/productCard.js";
-import { searchListings } from "../listeners/searchListings.js";
-import { filterListings } from "../utils/filterListings.js";
-import { getParam } from "../utils/getParam.js";
+import { getListings } from "../js/api/getListings.js";
+import { productCard } from "../js/components/productCard.js";
+import { searchListings } from "../js/listeners/searchListings.js";
+import { filterListings } from "../js/utils/filterListings.js";
+import { getParam } from "../js/utils/getParam.js";
+import "../scss/styles.scss";
+import { checkState } from "../js/state/user.js";
+// Import all of Bootstrap's JS
+import * as bootstrap from "bootstrap";
 export function listings() {
   console.log("listings");
   const listingsSearch = getParam("search");
